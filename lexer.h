@@ -10,11 +10,25 @@ typedef enum {
     IDENTIFIER,
     NUMBER,
     OPERATOR,
-    PARENT_LEFT,   
-    PARENT_RIGHT,  
+    PARENT_LEFT,     
+    PARENT_RIGHT,    
+    IF,              
+    ELSE,            
+    WHILE,           
+    FOR,             
+    RETURN,          
+    INT,             
+    FLOAT,           
+    CHAR,            
+    STRING_LITERAL,  
+    CHAR_LITERAL,    
+    COMMA,           
+    SEMICOLON,       
     UNKNOWN,
     END_OF_FILE
 } TokenType;
+
+
 
 typedef struct {
     TokenType type;
